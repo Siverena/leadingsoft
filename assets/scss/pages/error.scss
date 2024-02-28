@@ -1,0 +1,45 @@
+.ls-404 {
+    flex-grow: 1;
+    padding-top: 94px;
+    padding-bottom: 120px;
+    @media screen {
+        @media (max-width: grid-width($desktop)) {
+            padding-top: 120px;
+        }
+        @media (max-width: grid-width($laptop)) {
+            padding-top: 40px;
+            padding-bottom: 100px;
+        }
+        @media (max-width: grid-width( $tablet)) {
+        }
+    }
+    &__error {
+        font-size: 60px;
+        line-height: 80px;
+        margin-bottom: 24px;
+        font-weight: 700;
+        @media screen {
+            @media (max-width: grid-width($desktop)) {
+                font-size: 40px;
+                line-height: 54px;
+            }
+            @media (max-width: grid-width($laptop)) {
+            }
+            @media (max-width: grid-width( $tablet)) {
+            }
+        }
+    }
+    &__text {
+        margin-bottom: 64px;
+        line-height: 32px;
+        font-size: 24px;
+        @media screen {
+            @media (max-width: grid-width($desktop)) {
+            }
+            @media (max-width: grid-width($laptop)) {
+            }
+            @media (max-width: grid-width( $tablet)) {
+            }
+        }
+    }
+}

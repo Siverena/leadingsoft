@@ -1,0 +1,70 @@
+.ls-why-us {
+    &__title {
+        margin-bottom: 40px;
+        .ls-h2 {
+            margin-bottom: 16px;
+        }
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 562px);
+        column-gap: 16px;
+        row-gap: 16px;
+        @media screen {
+            @media (max-width: grid-width($desktop)) {
+                grid-template-columns: repeat(auto-fill, 484px);
+            }
+            @media (max-width: grid-width($laptop)) {
+                grid-template-columns: repeat(auto-fill, 356px);
+            }
+            @media (max-width: grid-width( $tablet)) {
+                grid-template-columns: repeat(auto-fill, 100%);
+            }
+        }
+    }
+    &__card {
+        padding: 32px 135px 92px 32px;
+        border-radius: 4px;
+        background-image: url(@/assets/img/ls-why-us/bg.svg);
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        @media screen {
+            @media (max-width: grid-width($desktop)) {
+                padding: 32px 57px 92px 32px;
+                @media (max-width: grid-width($laptop)) {
+                    padding: 32px 32px 92px 32px;
+                }
+                @media (max-width: grid-width( $tablet)) {
+                    padding: 32px 20px;
+                    &:nth-of-type(1) {
+                        order: 1;
+                    }
+                    &:nth-of-type(2) {
+                        order: 2;
+                    }
+                    &:nth-of-type(3) {
+                        order: 4;
+                    }
+                    &:nth-of-type(4) {
+                        order: 3;
+                    }
+                }
+            }
+        }
+        ul {
+            margin: 0;
+            padding-left: 16px;
+        }
+        &--light {
+            background-color: $background;
+            background-position: right -209px bottom -234px;
+        }
+        &--dark {
+            background-color: $blue;
+            color: $white;
+            background-position: right -100px center;
+        }
+    }
+}

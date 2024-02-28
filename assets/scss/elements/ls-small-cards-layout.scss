@@ -1,0 +1,23 @@
+.ls-small-cards-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 369px);
+    column-gap: 16px;
+    margin-bottom: 40px;
+    @media screen {
+        @media (max-width: grid-width($desktop)) {
+            grid-template-columns: repeat(auto-fill, 317px);
+            justify-content: space-between;
+            row-gap: 16px;
+            padding: 16px 0;
+        }
+        @media (max-width: grid-width($laptop)) {
+            grid-template-columns: repeat(auto-fill, 343px);
+        }
+        @media (max-width: grid-width( $tablet)) {
+            grid-template-columns: repeat(auto-fill, 320px);
+        }
+        @media (max-width: 695px) {
+            grid-template-columns: repeat(auto-fill, 100%);
+        }
+    }
+}

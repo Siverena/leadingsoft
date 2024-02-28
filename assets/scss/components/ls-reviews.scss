@@ -1,0 +1,17 @@
+.ls-reviews {
+    &__wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+    &__carousel {
+        width: 100%;
+        display: flex;
+        transition: all ease 0.5s;
+    }
+    &__btns {
+        display: flex;
+        column-gap: 8px;
+        margin-bottom: 24px;
+        justify-content: flex-end;
+    }
+}

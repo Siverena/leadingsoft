@@ -1,0 +1,40 @@
+.ls-review {
+    flex-shrink: 0;
+    width: 1140px;
+    @media screen {
+        @media (max-width: grid-width($desktop)) {
+            width: 984px;
+        }
+        @media (max-width: grid-width($laptop)) {
+            width: 728px;
+        }
+        @media (max-width: grid-width( $tablet)) {
+            width: 100%;
+        }
+    }
+    &__img {
+        margin-bottom: 24px;
+
+        img {
+            height: 61px;
+        }
+    }
+    &__company {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 33px;
+        margin-bottom: 8px;
+    }
+    &__city {
+        line-height: 22px;
+        margin-bottom: 8px;
+    }
+    &__rate {
+        display: flex;
+        column-gap: 8px;
+        margin-bottom: 32px;
+    }
+    &__text {
+        line-height: 22px;
+    }
+}

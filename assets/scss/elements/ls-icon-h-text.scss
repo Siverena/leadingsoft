@@ -1,0 +1,38 @@
+.ls-icon-h-text {
+    min-height: 228px;
+    &--ligth,
+    &--blue {
+        padding: 16px;
+        box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 2px;
+    }
+    &--ligth {
+        background-color: $background;
+    }
+    &--blue {
+        background-color: $blue;
+        color: $white;
+        .ls-icon-h-text__header {
+            color: $white;
+        }
+        svg {
+            path {
+                fill: $white;
+            }
+        }
+    }
+    &__icon {
+        margin-bottom: 16px;
+        height: 32px;
+    }
+    &__header {
+        margin-bottom: 8px;
+        color: $blue;
+        font-weight: 700;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,38 @@
+<svg width="422.177734" height="413.000000" viewBox="0 0 422.178 413" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient id="paint_linear_19_22813_0" x1="215.677734" y1="413.000000" x2="215.677734" y2="0.000005" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#5FA7FF"/>
+			<stop offset="0.461200" stop-color="#ABD3F3"/>
+			<stop offset="0.824200" stop-color="#E1F3EA"/>
+			<stop offset="1.000000" stop-color="#F6FFE6"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_19_22814_0" x1="215.677734" y1="392.980133" x2="215.677734" y2="0.000859" gradientUnits="userSpaceOnUse">
+			<stop offset="0.500000" stop-color="#A6D1F4"/>
+			<stop offset="0.588600" stop-color="#9CCBF2"/>
+			<stop offset="0.737600" stop-color="#82BAED"/>
+			<stop offset="0.927500" stop-color="#589FE4"/>
+			<stop offset="1.000000" stop-color="#4694E0"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_19_22815_0" x1="277.998596" y1="413.000000" x2="277.998596" y2="0.410436" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#0071BC"/>
+			<stop offset="0.115600" stop-color="#147BC6"/>
+			<stop offset="0.288900" stop-color="#2A86D1"/>
+			<stop offset="0.477700" stop-color="#3A8EDA"/>
+			<stop offset="0.691600" stop-color="#4393DE"/>
+			<stop offset="0.984600" stop-color="#4694E0"/>
+		</linearGradient>
+	</defs>
+	<g opacity="0.300000">
+		<mask id="mask19_22812" mask-type="alpha" maskUnits="userSpaceOnUse" x="9.177734" y="0.000000" width="413.000000" height="413.000000">
+			<path id="Vector" d="M9.17773 413L9.17773 0L422.178 0L422.178 413L9.17773 413Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+		</mask>
+		<g mask="url(#mask19_22812)">
+			<path id="Vector" d="M9.17773 206.5C9.17773 320.562 101.616 413 215.678 413C329.74 413 422.178 320.562 422.178 206.5C422.178 92.438 329.74 0 215.678 0C101.616 0 9.17773 92.438 9.17773 206.5ZM342.176 206.5C342.176 276.292 285.562 332.999 215.678 332.999C145.885 332.999 89.1792 276.385 89.1792 206.5C89.1792 136.615 145.793 80.0015 215.678 80.0015C285.47 80.0015 342.176 136.708 342.176 206.5Z" fill="url(#paint_linear_19_22813_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M9.17773 206.501C9.17773 223.021 11.127 238.984 14.8389 254.391C18.2729 238.705 23.2847 222.928 30.0596 207.429C75.5361 102.833 180.782 47.7974 265.145 84.5498C349.416 121.209 380.878 235.736 335.401 340.332C326.956 359.636 316.562 377.27 304.496 392.954C374.103 359.729 422.271 288.73 422.271 206.501C422.271 92.438 329.833 0.000976562 215.771 0.000976562C101.708 0.000976562 9.17773 92.438 9.17773 206.501Z" fill="url(#paint_linear_19_22814_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M352.85 189.98C352.85 304.042 260.412 396.48 146.35 396.48C142.173 396.48 137.997 396.294 133.82 396.109C158.879 406.967 186.629 413 215.678 413C329.74 413 422.178 320.562 422.178 206.5C422.178 96.6138 336.422 6.86816 228.208 0.371094C301.526 32.1123 352.85 105.06 352.85 189.98Z" fill="url(#paint_linear_19_22815_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+</svg>

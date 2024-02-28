@@ -1,0 +1,24 @@
+.ls-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-top: auto;
+    &__policy {
+        padding: 16px 0;
+        color: $blue;
+    }
+    &__copyright {
+        padding: 16px 0;
+        color: $light-text;
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+}

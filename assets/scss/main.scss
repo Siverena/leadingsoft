@@ -1,0 +1,64 @@
+/**********
+/* VARIABLES */
+@import './variables.scss';
+/**********
+/* NORMALIZE */
+@import './normalize.scss';
+
+/**********
+/* MIXINS */
+
+/**********
+/* FUNCTIONS */
+@import './functions.scss';
+
+/**********
+/* FONTS */
+@import './fonts.scss';
+
+/**********
+/* BASE */
+@import './base';
+
+/**********
+/* ELEMENTS */
+
+@import './elements/ls-button.scss';
+@import './elements/ls-base-link.scss';
+@import './elements/ls-img-text.scss';
+@import './elements/ls-icon-h-text.scss';
+@import './elements/ls-small-cards-layout.scss';
+@import './elements/ls-big-cards-layout.scss';
+@import './elements/ls-banner-dark.scss';
+@import './elements/ls-slide-btn.scss';
+@import './elements/ls-logo-bg.scss';
+
+/**********
+/* PLUGINS */
+@import './plugins/accordion.scss';
+
+/**********
+/* COMPONENTS */
+@import './components/ls-header.scss';
+@import './components/ls-footer.scss';
+@import './components/ls-nav.scss';
+@import './components/ls-welcome.scss';
+@import './components/ls-about-us.scss';
+@import './components/ls-products.scss';
+@import './components/ls-product.scss';
+@import './components/ls-our-clients.scss';
+@import './components/ls-reviews.scss';
+@import './components/ls-review.scss';
+@import './components/ls-order.scss';
+@import './components/ls-why-us.scss';
+@import './components/ls-it.scss';
+@import './components/ls-getting.scss';
+@import './components/ls-about-product.scss';
+@import './components/ls-advantages.scss';
+@import './components/ls-profit.scss';
+@import './components/ls-breadcrumbs.scss';
+@import './components/ls-notification.scss';
+
+/**********
+/* PAGES */
+@import './pages/error.scss';

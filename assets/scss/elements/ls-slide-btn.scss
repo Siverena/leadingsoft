@@ -1,0 +1,27 @@
+.ls-slide-btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    background-color: $blue;
+    cursor: pointer;
+    &:hover {
+        background-color: $blue-hover;
+        box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &--disabled {
+        background-color: $disabled;
+        &:hover {
+            background-color: $disabled;
+            box-shadow: none;
+            cursor: default;
+        }
+    }
+    svg {
+        width: 40px;
+        height: 40px;
+    }
+}

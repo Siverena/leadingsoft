@@ -1,0 +1,29 @@
+.ls-our-clients {
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__layout {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen {
+            @media (max-width: grid-width($desktop)) {
+                column-gap: 41px;
+            }
+            @media (max-width: grid-width($laptop)) {
+                column-gap: 15px;
+            }
+            @media (max-width: grid-width( $tablet)) {
+                column-gap: 6px;
+            }
+        }
+    }
+    &__image {
+        flex-shrink: 1;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.ls-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $white;
+    z-index: 999;
+    &--scroll {
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        @media screen {
+            @media (max-width: grid-width($laptop)) {
+                row-gap: 0;
+            }
+        }
+    }
+    &__contacts {
+        display: flex;
+        margin-left: auto;
+        column-gap: 16px;
+        align-items: center;
+        @media screen {
+            @media (max-width: grid-width($laptop)) {
+                display: none;
+            }
+        }
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+    }
+    &__btn {
+        margin-left: 16px;
+        @media screen {
+            @media (max-width: grid-width($laptop)) {
+                display: none;
+            }
+        }
+    }
+    &__open {
+        display: none;
+        cursor: pointer;
+        @media screen {
+            @media (max-width: grid-width($desktop)) {
+            }
+            @media (max-width: grid-width($laptop)) {
+                display: block;
+                margin-left: auto;
+            }
+            @media (max-width: grid-width($tablet)) {
+            }
+        }
+    }
+    &__vk {
+        width: 40px;
+        height: 40px;
+        &:hover {
+            rect {
+                fill: $blue-hover;
+            }
+        }
+    }
+}

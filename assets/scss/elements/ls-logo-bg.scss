@@ -1,0 +1,268 @@
+@keyframes body {
+    0% {
+        opacity: 0;
+        --size: 0px;
+    }
+
+    100% {
+        opacity: 1;
+        --size: 320px;
+    }
+}
+
+@keyframes rotate_anim {
+    from {
+        transform: rotate3d(1, 1, 1, -360deg);
+    }
+
+    to {
+        transform: matrix3d(1, 1, 1, 0deg);
+    }
+
+    to {
+        transform: rotate3d(1, 1, 1, +720deg);
+    }
+}
+@keyframes path {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        fill: brown;
+    }
+
+    100% {
+        fill: white;
+        opacity: 1;
+    }
+}
+@keyframes wave {
+    0% {
+        opacity: 1;
+        transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(-50%, -50%, 0)
+            scale3d(var(--scalingFactor), var(--scalingFactor), 1);
+    }
+}
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+
+    100% {
+        left: 150%;
+    }
+}
+.ls-logo-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+
+    max-width: 1440px;
+    max-height: 1080px;
+
+    animation-duration: 0.15s;
+    opacity: 0;
+    animation-name: body;
+    transition: 0.15s;
+    animation: path 0.15s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.15s;
+    --size: 360px;
+    z-index: 1;
+    right: -483px;
+    top: 140px;
+    position: absolute;
+    --size: 920px;
+    width: 1920px;
+
+    height: auto;
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    &__container {
+        display: flex;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-gap: 1rem;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card {
+        animation-name: rotate_anim;
+        animation-duration: 3s;
+        transform: rotate3d(1, 1, 1, 0deg);
+        fill: white;
+    }
+
+    .path {
+        fill: white;
+        animation-name: path;
+        opacity: 0;
+        transition: 0.15s;
+        animation: path 0.15s;
+        animation-fill-mode: forwards;
+        animation-delay: 0.15s;
+    }
+
+    svg {
+        width: 920px;
+        height: 920px;
+    }
+    /* ///////////////////////////////////// */
+
+    :root {
+        --scalingFactor: calc(100 / 45);
+    }
+
+    .dot,
+    .trigger {
+        position: absolute;
+        top: 47%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        height: var(--size);
+        width: var(--size);
+        margin: 10px;
+        background: var(--gray);
+        box-shadow: 5px 5px 10px rgba(66, 147, 240, 0.062),
+            -5px -5px 0px rgba(255, 255, 255, 0.13);
+        border-radius: 50%;
+    }
+
+    .trigger {
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(0, 0, 0, 0.5);
+        letter-spacing: 0.05em;
+        width: 920px;
+        height: 920px;
+    }
+
+    .dot {
+        animation-name: wave;
+        animation-timing-function: ease-in-out;
+        animation-duration: 3.1s;
+        animation-fill-mode: initial;
+    }
+
+    .dot {
+        opacity: 1;
+        animation-delay: 3.2s;
+        transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1);
+    }
+
+    .dot:nth-of-type(2) {
+        z-index: 1;
+        animation-delay: 2.7s;
+    }
+
+    .dot:nth-of-type(3) {
+        z-index: 2;
+        animation-delay: 2.7s;
+    }
+    .flare {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 45px;
+        transform: skewX(-45deg);
+        animation: flareAnimation;
+        left: -150%;
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.034),
+            rgba(255, 255, 255, 0.123)
+        );
+        animation: flareAnimation 15s;
+        transition: 2s;
+    }
+}
+
+@media screen and (max-width: grid-width($desktop)) {
+    .ls-logo-bg {
+        --size: 600px;
+        width: 1440px;
+        height: 1080px;
+        top: -101px;
+        svg {
+            width: 600px;
+            height: 600px;
+        }
+        .trigger {
+            width: 600px;
+            height: 600px;
+        }
+    }
+}
+
+@media screen and (max-width: grid-width($laptop)) {
+    .ls-logo-bg {
+        --size: 400px;
+        width: 750px;
+        height: 508px;
+
+        right: -233px;
+        top: 110px;
+
+        svg {
+            width: 400px;
+            height: 400px;
+        }
+        .trigger {
+            width: 400px;
+            height: 400px;
+        }
+    }
+}
+@media screen and (max-width: grid-width( $tablet)) {
+    .ls-logo-bg {
+        --size: 333px;
+        width: 750px;
+        height: 508px;
+        right: -319px;
+        top: 390px;
+
+        svg {
+            width: 333px;
+            height: 333px;
+        }
+        .trigger {
+            width: 333px;
+            height: 333px;
+        }
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .ls-logo-bg {
+        top: 413px;
+    }
+}
+@media screen and (max-width: 503px) {
+    .ls-logo-bg {
+        top: 474px;
+    }
+}
+@media screen and (max-width: 417px) {
+    .ls-logo-bg {
+        top: 541px;
+    }
+}

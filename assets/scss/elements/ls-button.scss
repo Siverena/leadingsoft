@@ -1,0 +1,85 @@
+.ls-button {
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    width: fit-content;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    &--fullblue {
+        background-color: $blue;
+        color: $white;
+        &:hover {
+            box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.15);
+            background-color: $blue-hover;
+        }
+        &:active {
+            box-shadow: none;
+            background-color: $blue-hover;
+        }
+        &:disabled {
+            background-color: $disabled;
+        }
+    }
+    &--fullwhite {
+        background-color: $white;
+        color: $text;
+        &:hover {
+            box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.15);
+            background-color: $background;
+        }
+        &:active {
+            box-shadow: none;
+            background-color: $background;
+        }
+        &:disabled {
+            background-color: $disabled;
+        }
+    }
+    &--white {
+        background-color: transparent;
+        color: $white;
+        border: 1px solid $white;
+        &:hover {
+            border: 1px solid $white;
+            box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.15);
+            background-color: $white;
+            color: $text;
+        }
+        &:active {
+            box-shadow: none;
+            border: 1px solid $white;
+            background-color: $background;
+            color: $text;
+        }
+        &:disabled {
+            border: 1px solid $disabled;
+            background-color: $disabled;
+        }
+    }
+    &--blue {
+        background-color: transparent;
+        color: $dark-blue;
+        border: 1px solid $dark-blue;
+        &:hover {
+            border: 1px solid $blue;
+            box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.15);
+            background-color: $blue;
+            color: $white;
+        }
+        &:active {
+            box-shadow: none;
+            border: 1px solid $blue;
+            background-color: $blue;
+            color: $white;
+        }
+        &:disabled {
+            border: 1px solid $disabled;
+            background-color: $disabled;
+        }
+    }
+}

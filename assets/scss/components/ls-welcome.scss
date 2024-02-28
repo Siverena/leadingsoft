@@ -1,0 +1,53 @@
+.ls-welcome {
+    display: flex;
+    flex-direction: column;
+    padding: 94px 368px 214px 0;
+    @media screen {
+        @media (max-width: grid-width($desktop)) {
+            padding: 120px 566px 199px 0;
+        }
+        @media (max-width: grid-width($laptop)) {
+            padding: 40px 339px 0px 0px;
+        }
+        @media (max-width: grid-width( $tablet)) {
+            padding: 40px 0 240px;
+        }
+    }
+    &__header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 64px;
+    }
+    &__title {
+        font-size: 60px;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 64px;
+        line-height: 81px;
+        @media screen {
+            @media (max-width: grid-width($desktop)) {
+                margin-bottom: 24px;
+                font-size: 40px;
+                line-height: 54px;
+            }
+            @media (max-width: grid-width($laptop)) {
+            }
+            @media (max-width: grid-width( $tablet)) {
+            }
+        }
+    }
+    &__text {
+        font-size: 24px;
+    }
+    &__buttons {
+        display: flex;
+        column-gap: 24px;
+        @media (max-width: 416px) {
+            flex-direction: column;
+            row-gap: 24px;
+            .ls-button {
+                width: 280px;
+            }
+        }
+    }
+}

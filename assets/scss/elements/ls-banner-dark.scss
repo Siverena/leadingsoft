@@ -1,0 +1,56 @@
+.ls-banner-dark {
+    border-radius: 4px;
+    overflow: hidden;
+    background-image: linear-gradient(
+        315deg,
+        #12222d 0%,
+        #002450 25.17%,
+        #0040a1 53.3%
+    );
+    background-repeat: no-repeat;
+    @media screen {
+        @media (max-width: grid-width($desktop)) {
+        }
+        @media (max-width: grid-width($laptop)) {
+        }
+        @media (max-width: grid-width( $tablet)) {
+            .ls-button {
+                width: 100%;
+            }
+        }
+    }
+    &__layout {
+        padding: 40px 344px 147px 40px;
+        background-image: url(@/assets/img/ls-banner-dark/bg.svg);
+        background-repeat: no-repeat;
+        background-position: right -200px center;
+        @media screen {
+            @media (max-width: grid-width($desktop)) {
+                padding: 40px 310px 147px 40px;
+                background-position: right -305px center;
+            }
+            @media (max-width: grid-width($laptop)) {
+                padding: 40px 54px 147px 40px;
+                background-position: right -400px center;
+            }
+            @media (max-width: grid-width( $tablet)) {
+                padding: 40px 20px 64px 20px;
+                background-image: none;
+            }
+        }
+    }
+    &__text {
+        color: white;
+        font-size: 24px;
+        margin-bottom: 32px;
+        @media screen {
+            @media (max-width: grid-width($desktop)) {
+            }
+            @media (max-width: grid-width($laptop)) {
+            }
+            @media (max-width: grid-width( $tablet)) {
+                font-size: 22px;
+            }
+        }
+    }
+}

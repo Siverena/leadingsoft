@@ -1,0 +1,110 @@
+@mixin text-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-bottom: 40px;
+}
+
+html {
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+body {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: inherit;
+    overflow-x: hidden;
+    min-width: 360px;
+    background-color: $white;
+    position: relative;
+}
+.ls-content-layout {
+    padding-top: 115px;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+}
+.container {
+    width: $desktop;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    z-index: 5;
+    @media screen {
+        @media (max-width: grid-width($desktop)) {
+            padding: 0 20px;
+            width: $laptop;
+        }
+        @media (max-width: grid-width($laptop)) {
+            width: $tablet;
+        }
+        @media (max-width: grid-width( $tablet)) {
+            width: 100%;
+        }
+    }
+}
+.ls-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
+    @media screen {
+        @media (max-width: grid-width($desktop)) {
+            row-gap: 100px;
+        }
+        @media (max-width: $laptop) {
+            row-gap: 80px;
+        }
+        @media (max-width: $tablet) {
+            row-gap: 60px;
+        }
+    }
+}
+
+.ls-h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    margin: 0;
+    margin-bottom: 16px;
+    @media screen {
+        @media (max-width: grid-width($desktop)) {
+        }
+        @media (max-width: grid-width($laptop)) {
+        }
+        @media (max-width: grid-width( $tablet)) {
+        }
+    }
+}
+.ls-h2 {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+    @media screen {
+        @media (max-width: grid-width($desktop)) {
+        }
+        @media (max-width: grid-width($laptop)) {
+        }
+        @media (max-width: grid-width( $tablet)) {
+            font-size: 24px;
+        }
+    }
+}
+.ls-h3 {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}

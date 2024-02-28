@@ -1,0 +1,20 @@
+.ls-products {
+    &__text {
+        @include text-block;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    &__title {
+        margin-bottom: 16px;
+        &--without-text {
+            margin-bottom: 40px;
+        }
+    }
+    &__btn {
+        margin: auto;
+        margin-top: 24px;
+    }
+}

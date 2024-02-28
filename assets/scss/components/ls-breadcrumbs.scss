@@ -1,0 +1,26 @@
+.ls-breadcrumbs {
+    font-size: 12px;
+    text-decoration: none;
+    color: $text;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    padding: 16px 0;
+    margin-bottom: -100px;
+    @media screen {
+        @media (max-width: grid-width($desktop)) {
+            margin-bottom: -70px;
+        }
+        @media (max-width: grid-width($laptop)) {
+            margin-bottom: -50px;
+        }
+        @media (max-width: grid-width( $tablet)) {
+        }
+    }
+    &__link {
+        color: inherit;
+        &:hover {
+            color: $blue;
+        }
+    }
+}
